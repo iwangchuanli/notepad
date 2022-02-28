@@ -1,0 +1,51 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: iJzW/yOyq3QnK1NFQBIApg==
+    password: +Pjjk+5tZ4xnV4xfpOFNecMGjcdiKsfv62MutBVr82E=
+    jdbcUrl: jdbc:mysql://127.0.0.1:3306/notepad
+    pool-name: DatebookHikariCP
+    auto-commit: true
+    minimumIdle: 5
+    maximumPoolSize: 50
+    maxLifetime: 180000
+    idleTimeout: 60000
+    connectionTimeout: 20000
+    connection-test-query: SELECT 'x' FROM DUAL
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+    timeout: 5000
+    lettuce:
+      pool:
+        max-active: 200
+        max-idle: 100
+        min-idle: 8
+        max-wait: 1000
+  mail:
+    nickname: name
+    default-encoding: UTF-8
+    protocol: smtp
+    host: smtp.163.com
+    username: username@163.com
+    password: password
+    test-connection: false
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.ssl.enable: true
+      mail.smtp.socketFactory.class: javax.net.ssl.SSLSocketFactory
+      mail.smtp.socketFactory.port: 465
+      mail.smtp.starttls.enable: true
+      mail.smtp.starttls.required: true
+      mail.smtp.connectiontimeout: 50000
+      mail.smtp.timeout: 30000
+      mail.smtp.writetimeout: 50000
+logging:
+  config: classpath:log4j2-dev.xml
+app:
+  anonUrl: /login,/temporary/login,/register,/forget/password,/email/phone
+  fileUploadPath: /Users/root/Documents/

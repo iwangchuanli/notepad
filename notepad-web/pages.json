@@ -1,0 +1,121 @@
+{
+	"pages": [ 
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom" ,// 隐藏系统导航栏
+				"navigationBarTextStyle": "white" // 状态栏字体为白色，只能为 white-白色，black-黑色 二选一
+			}
+		},
+		{
+			"path": "pages/key/index",
+			"style": {
+				"navigationStyle": "custom" ,// 隐藏系统导航栏
+				"navigationBarTextStyle": "white" // 状态栏字体为白色，只能为 white-白色，black-黑色 二选一
+			}
+		},
+		{
+			"path": "pages/bill/index",
+			"style": {
+				"navigationStyle": "custom" ,// 隐藏系统导航栏
+				"navigationBarTextStyle": "white" // 状态栏字体为白色，只能为 white-白色，black-黑色 二选一
+			}
+		}
+	    ,{
+            "path" : "pages/bill/details",
+            "style" :{
+				"navigationBarBackgroundColor":"#39CCCC",
+				"navigationBarTextStyle":"white",
+				"navigationBarTitleText":"账单明细"
+            }
+        },{
+            "path" : "pages/bill/update",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom" ,// 隐藏系统导航栏
+                "navigationBarTextStyle": "white" // 状态栏字体为白色，只能为 white-白色，black-黑色 二选一
+            }
+        },{
+            "path" : "pages/bill/add",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "navigationBarTextStyle": "white"
+            }
+        },{
+            "path" : "pages/login/login",
+            "style": {
+            	"navigationStyle": "custom",
+            	"app-plus": {
+            		"titleNView": false,
+            		"animationType": "slide-in-bottom"
+            	}
+            }
+        }
+        ,{
+            "path" : "pages/user/details",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/about/about",
+            "style" :                                                                                    
+            {
+                "navigationBarBackgroundColor":"#39CCCC",
+                "navigationBarTextStyle":"white",
+                "navigationBarTitleText":"关于"
+            }
+            
+        }
+        ,{
+            "path" : "pages/doc/protocol/protocol",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "记事本",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		//将iOS中回弹效果顶部的灰色改为白色
+		"backgroundColorTop": "#FFFFFF",
+		//在App中，取消安卓下拉刷新灰色半弧形效果
+		"app-plus" : {
+			"bounce" : "none"
+		}
+	},
+	"tabBar": {
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"color": "#BDBDBD",
+		"selectedColor": "#BDBDBD",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/record.png",
+				"selectedIconPath": "static/tabbar/record-selected.png",
+				"text": "记录"
+			},
+			{
+				"pagePath": "pages/key/index",
+				"iconPath": "static/tabbar/key.png",
+				"selectedIconPath": "static/tabbar/key-selected.png",
+				"text": "密钥"
+			},
+			{
+				"pagePath": "pages/bill/index",
+				"iconPath": "static/tabbar/bill.png",
+				"selectedIconPath": "static/tabbar/bill-selected.png",
+				"text": "账单"
+			}
+		]
+	}
+}

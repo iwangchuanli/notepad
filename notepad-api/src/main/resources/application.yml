@@ -1,0 +1,22 @@
+server:
+  servlet:
+    context-path: /
+spring:
+  profiles:
+    active: dev
+  jackson:
+    default-property-inclusion: non_null
+    date-format: yyyy-MM-dd HH:mm
+    time-zone: GMT+8
+  messages:
+    encoding: UTF-8
+
+mybatis-plus:
+  type-aliases-package: com.ten.entity
+  mapper-locations: classpath*:mappers/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    banner: false

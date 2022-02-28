@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+    <!-- 定义所有的appender -->
+    <Appenders>
+        <!--这个输出控制台的配置-->
+        <Console name="Console" target="SYSTEM_OUT">
+            <!--输出日志的格式-->
+            <PatternLayout pattern="[%date{yyyy-MM-dd HH:mm:ss}][%thread][%level][%class][%line]:%message%n"/>
+        </Console>
+    </Appenders>
+
+    <!-- 全局配置，默认所有的Logger都继承此配置 -->
+    <Loggers>
+        <!-- root logger 配置 -->
+        <root level="info">
+            <appender-ref ref="Console"/>
+        </root>
+    </Loggers>
+</Configuration>
